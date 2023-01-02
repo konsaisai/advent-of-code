@@ -17,13 +17,18 @@ public class Main {
 //            System.out.println("最も多くカロリーを持っているエルフのカロリー：" + elf.getTopSumCalories(1));
 //            System.out.println("上位３人の総カロリー：" + elf.getTopSumCalories(3));
 
-            //Day2
-            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day2_input.txt");
-            RockPaperScissors rps = new RockPaperScissors();
-            rps.Judge(input);
-            System.out.println("私のスコア：" + rps.getMyselfScore());
+//            //Day2
+//            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day2_input.txt");
+//            RockPaperScissors rps = new RockPaperScissors();
+//            rps.Judge(input);
+//            System.out.println("私のスコア：" + rps.getMyselfScore());
 
-
+            //Day3
+            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day3_input.txt");
+            Compartments compartments = new Compartments();
+//            compartments.checkRucksack(input);
+            compartments.checkRucksackGroup(input);
+            System.out.println("結果:" + compartments.getScore());
 
 
         } catch (IOException e) {
