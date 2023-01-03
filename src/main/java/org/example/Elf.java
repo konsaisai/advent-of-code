@@ -8,18 +8,18 @@ class Elf {
     public void setSumCaloriesForElf(String input){
         String lineCd = "\n";
         //エルフの数ごとにループ
-        String[] elfs = input.split(lineCd + lineCd);
-        int[] elfsCalories = new int[elfs.length];
-        for (int i = 0; i < elfs.length; i++) {
+        String[] elves = input.split(lineCd + lineCd);
+        int[] elvesCalories = new int[elves.length];
+        for (int i = 0; i < elves.length; i++) {
             int sumCalories = 0;
             //各エルフのカロリーの数ごとにループ
-            String[] calorie = elfs[i].split(lineCd);
+            String[] calorie = elves[i].split(lineCd);
             for (String s : calorie) {
                 sumCalories = sumCalories + Integer.parseInt(s);
-                elfsCalories[i] = sumCalories;
+                elvesCalories[i] = sumCalories;
             }
         }
-        this.elfCalories = sortDesc(elfsCalories);
+        this.elfCalories = sortDesc(elvesCalories);
     }
 
     public int getTopSumCalories(int number){
