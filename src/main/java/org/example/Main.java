@@ -30,12 +30,21 @@ public class Main {
 //            compartments.checkRucksackGroup(input);
 //            System.out.println("結果:" + compartments.getScore());
 
-            //Day4
-            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day4_input.txt");
-            CampCleanup campCleanup = new CampCleanup();
-            campCleanup.checkSections(input);
-            System.out.println("オーバーラップ数:" + campCleanup.getCompleteDuplicatePair());
-            System.out.println("重複数:" + campCleanup.getDuplicatePair());
+//            //Day4
+//            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day4_input.txt");
+//            CampCleanup campCleanup = new CampCleanup();
+//            campCleanup.checkSections(input);
+//            System.out.println("オーバーラップ数:" + campCleanup.getCompleteDuplicatePair());
+//            System.out.println("重複数:" + campCleanup.getDuplicatePair());
+
+            //Day5
+            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day5_drawing.txt");
+            SupplyStacks supplyStacks = new SupplyStacks();
+            supplyStacks.getDrawing(input);
+            input = readFile("/Users/aya/IdeaProjects/AdventOfCode2022_Day1/src/main/java/org/example/Day5_input.txt");
+            supplyStacks.moveStacks(input);
+            System.out.println("結果：" + supplyStacks.getEndsUpOnTop());
+            //QNDWLMGNS
 
 
         } catch (IOException e) {
